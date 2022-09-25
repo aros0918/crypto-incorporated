@@ -46,14 +46,14 @@ const Homepage = () => {
             value={millify(globalStats?.total24hVolume)}
           />
         </Col>
-        {globalStats?.totalMarkets && (
+        {/* {globalStats?.totalMarkets && (
           <Col span={12}>
             <Statistic
               title="Total Markets"
               value={millify(globalStats.totalMarkets)}
             />
           </Col>
-        )}
+        )} */}
       </Row>
       <div className="home-heading-container">
         <Title level={2} className="home-title">
