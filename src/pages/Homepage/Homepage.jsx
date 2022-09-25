@@ -1,4 +1,4 @@
-import { Col, Row, Statistic, Typography } from "antd";
+import { Typography } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import Loader from "../../components/Loader/Loader";
@@ -15,7 +15,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Title level={2} className="heading">
+      {/* <Title level={2} className="heading">
         Global Crypto Stats
       </Title>
       <Row>
@@ -46,7 +46,7 @@ const Homepage = () => {
         <Col span={12}>
           <Statistic title="Total Markets" value={globalStats?.totalMarkets} />
         </Col>
-      </Row>
+      </Row> */}
       <div className="home-heading-container">
         <Title level={2} className="home-title">
           Top 10 Cryptocurrencies in the world
