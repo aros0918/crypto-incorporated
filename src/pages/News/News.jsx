@@ -16,8 +16,6 @@ const News = ({ simplified }) => {
   });
   const { data: cryptosList } = useGetCryptosQuery(100);
 
-  console.log(cryptoNews);
-
   if (!cryptoNews?.value) return "Loading...";
 
   return (
