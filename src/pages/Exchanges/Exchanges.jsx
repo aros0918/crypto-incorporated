@@ -23,36 +23,37 @@ const Exchanges = () => {
         <Col span={6}>Markets</Col>
       </Row>
       <Row>
-        {exchangeList.map((exchange) => (
-          <Col span={24} key={exchange.uuid}>
-            <Collapse>
-              <Panel
-                key={exchange.uuid}
-                showArrow={false}
-                header={
-                  <Row key={exchange.uuid}>
-                    <Col span={6} className="currency-name-container">
-                      <Text>
-                        <strong>{exchange.rank}.</strong>
-                      </Text>
-                      <Avatar
-                        style={{ margin: "0 10px" }}
-                        src={exchange.iconUrl}
-                      />
-                      <Text>
-                        <strong>{exchange.name}</strong>
-                      </Text>
-                    </Col>
-                    <Col span={6}>${millify(exchange["24hVolume"])}</Col>
-                    <Col span={6}>{millify(exchange.numberOfMarkets)}</Col>
-                  </Row>
-                }
-              >
-                {HTMLReactParser(exchange.description || "")}
-              </Panel>
-            </Collapse>
-          </Col>
-        ))}
+        {exchangeList &&
+          exchangeList.map((exchange) => (
+            <Col span={24} key={exchange.uuid}>
+              <Collapse>
+                <Panel
+                  key={exchange.uuid}
+                  showArrow={false}
+                  header={
+                    <Row key={exchange.uuid}>
+                      <Col span={6} className="currency-name-container">
+                        <Text>
+                          <strong>{exchange.rank}.</strong>
+                        </Text>
+                        <Avatar
+                          style={{ margin: "0 10px" }}
+                          src={exchange.iconUrl}
+                        />
+                        <Text>
+                          <strong>{exchange.name}</strong>
+                        </Text>
+                      </Col>
+                      <Col span={6}>${millify(exchange["24hVolume"])}</Col>
+                      <Col span={6}>{millify(exchange.numberOfMarkets)}</Col>
+                    </Row>
+                  }
+                >
+                  {HTMLReactParser(exchange.description || "")}
+                </Panel>
+              </Collapse>
+            </Col>
+          ))}
       </Row>
     </>
   );
