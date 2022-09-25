@@ -44,7 +44,7 @@ const News = ({ simplified }) => {
       )}
       {cryptoNews &&
         cryptoNews.value.map((news, i) => (
-          <Col xs={24} sm={12}>
+          <Col xs={24} sm={12} key={news.url}>
             <Card hoverable className="news-card">
               <a href={news.url} target="_blank" rel="noreferrer">
                 <div className="news-image-container">

@@ -3,7 +3,7 @@ import {
   FundOutlined,
   HomeOutlined,
   MenuOutlined,
-  MoneyCollectOutlined
+  MoneyCollectOutlined,
 } from "@ant-design/icons";
 import { Avatar, Button, Menu, Typography } from "antd";
 import React, { useEffect, useState } from "react";
@@ -36,18 +36,18 @@ const Navbar = () => {
     }
   }, [screenSize]);
 
-  console.log("render");
+ 
 
   return (
     <nav className="nav-container">
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/">Cryptoverse</Link>
+          <Link to="/">Crypto Inc.</Link>
         </Typography.Title>
         <Button
           className="menu-control-container"
-          onClick={() => setActiveMenu(prev => !prev)}
+          onClick={() => setActiveMenu((prev) => !prev)}
         >
           <MenuOutlined />
         </Button>

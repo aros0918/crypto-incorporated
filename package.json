@@ -1,5 +1,5 @@
 {
-  "name": "cryptoverse",
+  "name": "crypto-incorporated",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +14,7 @@
     "antd": "^4.23.2",
     "axios": "^0.27.2",
     "chart.js": "^3.9.1",
+    "dotenv": "^16.0.2",
     "html-react-parser": "^3.0.4",
     "millify": "^5.0.1",
     "moment": "^2.29.4",
