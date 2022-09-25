@@ -14,6 +14,8 @@ const Homepage = () => {
 
   if (isFetching) return <Loader />;
 
+  console.log(globalStats.totalMarkets);
+
   return (
     <>
       <Title level={2} className="heading">
@@ -44,7 +46,7 @@ const Homepage = () => {
             value={millify(globalStats?.total24hVolume)}
           />
         </Col>
-        {globalStats.totalMarkets && (
+        {globalStats?.totalMarkets && (
           <Col span={12}>
             <Statistic
               title="Total Markets"
