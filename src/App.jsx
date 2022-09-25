@@ -12,8 +12,6 @@ import {
 } from "./pages";
 
 const App = () => {
-  console.log(import.meta.env.VITE_RAPIDAPI_KEY);
-
   return (
     <div className="app">
       <div classNamed="navbar">
