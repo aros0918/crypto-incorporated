@@ -24,7 +24,7 @@ const Exchanges = () => {
       </Row>
       <Row>
         {exchangeList.map((exchange) => (
-          <Col span={24}>
+          <Col span={24} key={exchange.uuid}>
             <Collapse>
               <Panel
                 key={exchange.uuid}
