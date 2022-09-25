@@ -35,25 +35,19 @@ const Homepage = () => {
         <Col span={12}>
           <Statistic
             title="Total Market Cap"
-            value={
-              globalStats.totalMarketCap && millify(globalStats.totalMarketCap)
-            }
+            value={millify(globalStats?.totalMarketCap)}
           />
         </Col>
         <Col span={12}>
           <Statistic
             title="Total 24h Volume"
-            value={
-              globalStats.total24hVolume && millify(globalStats.total24hVolume)
-            }
+            value={millify(globalStats.total24hVolume)}
           />
         </Col>
         <Col span={12}>
           <Statistic
             title="Total Markets"
-            value={
-              globalStats.totalMarkets && millify(globalStats.totalMarkets)
-            }
+            value={millify(globalStats.totalMarkets)}
           />
         </Col>
       </Row>
