@@ -14,8 +14,6 @@ const Homepage = () => {
 
   if (isFetching) return <Loader />;
 
-  console.log(globalStats.totalMarkets);
-
   return (
     <>
       <Title level={2} className="heading">
