@@ -29,9 +29,7 @@ const Homepage = () => {
         <Col span={12}>
           <Statistic
             title="Total Exchanges"
-            value={
-              globalStats.totalExchanges && millify(globalStats.totalExchanges)
-            }
+            value={millify(globalStats?.totalExchanges)}
           />
         </Col>
         <Col span={12}>
