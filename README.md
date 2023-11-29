@@ -16,13 +16,13 @@ This is a Crypto Application with real time data and news using RapidAPI and Rea
 
 ### Links
 
-- Solution URL: [https://github.com/ErysCode7/crypto-incorporated](https://github.com/ErysCode7/crypto-incorporated)
+- Solution URL: [https://github.com/aros0918/crypto-incorporated](https://github.com/aros0918/crypto-incorporated)
 - Live Site URL: [https://crypto-incorporated-web.vercel.app/](https://crypto-incorporated-web.vercel.app/)
 
 1. Clone the repo
 
    ```sh
-   git clone git@github.com:ErysCode7/crypto-incorporated.git
+   git clone git@github.com:aros0918/crypto-incorporated.git
    ```
 
 2. Install NPM packages
@@ -46,13 +46,6 @@ This is a Crypto Application with real time data and news using RapidAPI and Rea
 - Mobile-first workflow
 - React Router DOM
 - RapidAPI
-
-## Author
-
-- Facebook - [Erys Mozo](https://web.facebook.com/erys.mozo/)
-- Instagram - [\_erysmozo](https://www.instagram.com/_erysmozo/)
-- Frontend Mentor - [ErysCode7](https://www.frontendmentor.io/profile/ErysCode7)
-- LinkedIn - [Erys Mozo](https://www.linkedin.com/in/erys-mozo-280190230/)
 
 ## Acknowledgments
 
